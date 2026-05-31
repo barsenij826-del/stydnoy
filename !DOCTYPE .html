@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Стыдной | Анонимные истории</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0f1e 0%, #0c1222 100%);
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(18, 25, 45, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 48px;
+            padding: 40px 32px;
+            max-width: 520px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+        }
+
+        .logo {
+            font-size: 72px;
+            margin-bottom: 16px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, #b0b8d0 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+            margin-bottom: 12px;
+        }
+
+        .tagline {
+            color: #8e9bb5;
+            font-size: 17px;
+            margin-bottom: 32px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-weight: 500;
+        }
+
+        .description {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 28px;
+            padding: 20px;
+            margin-bottom: 32px;
+            text-align: left;
+            border-left: 3px solid #ff4d4d;
+        }
+
+        .description p {
+            color: #ccd6f0;
+            font-size: 16px;
+            line-height: 1.45;
+            margin-bottom: 12px;
+        }
+
+        .description p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            color: #ffb347;
+            font-weight: 600;
+        }
+
+        .telegram-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: #2aabee;
+            background: linear-gradient(95deg, #2aabee 0%, #1f8bcb 100%);
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 18px 28px;
+            border-radius: 60px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 10px 20px -5px rgba(42, 171, 238, 0.3);
+            border: 1px solid rgba(255,255,255,0.2);
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .telegram-btn:hover {
+            background: linear-gradient(95deg, #3bb9ff 0%, #2a9be0 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 18px 25px -8px rgba(42, 171, 238, 0.4);
+        }
+
+        .telegram-btn:active {
+            transform: translateY(1px);
+        }
+
+        .footer-note {
+            margin-top: 28px;
+            font-size: 13px;
+            color: #4a5568;
+            background: rgba(0,0,0,0.3);
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 40px;
+            backdrop-filter: blur(4px);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin: 28px 0 16px;
+            font-size: 13px;
+            color: #5d6b8a;
+        }
+
+        hr {
+            border-color: rgba(255,255,255,0.05);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">📛</div>
+        <h1>СТЫДНОЙ</h1>
+        <div class="tagline">Анонимные истории, от которых хочется сквозь землю провалиться</div>
+
+        <div class="description">
+                       <p>🤫 <span class="highlight">Анонимно</span> — твой позор останется только в канале. Ждём твою историю!</p>
+        </div>
+
+        <!-- КНОПКА С ПРЯМОЙ ССЫЛКОЙ НА ТЕЛЕГРАМ -->
+        <a href="https://t.me/stydnoy" class="telegram-btn" target="_blank" rel="noopener noreferrer">
+            🧷 ПЕРЕЙТИ В КАНАЛ
+        </a>
+
+        <div class="stats">
+                        <span>⚡️ Анонимно</span>
+        </div>
+
+        <div class="footer-note">
+            🔞 Нажимая на кнопку, вы подтверждаете, что вам есть 18 лет и у вас есть чувство юмора
+        </div>
+    </div>
+</body>
+</html>
